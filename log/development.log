@@ -1,0 +1,312 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100721213920')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:43:13) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'delayed_jobs'):
+  app/controllers/work_controller.rb:13:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:43:32) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'delayed_jobs'):
+  app/controllers/work_controller.rb:13:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `schema_migrations`[0m
+  [4;36;1mSQL (321.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100721213920')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:46:43) [GET]
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Columns (0.0ms)[0m   [0mMysql::Error: Table 'heroku_exl_delayed_job_test.delayed_jobs' doesn't exist: SHOW FIELDS FROM `delayed_jobs`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'heroku_exl_delayed_job_test.delayed_jobs' doesn't exist: SHOW FIELDS FROM `delayed_jobs`):
+  app/controllers/work_controller.rb:13:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (40.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `schema_migrations`[0m
+  [4;36;1mSQL (123.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100721213920')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:49:30) [GET]
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Columns (0.0ms)[0m   [0mMysql::Error: Table 'heroku_exl_delayed_job_development.delayed_jobs' doesn't exist: SHOW FIELDS FROM `delayed_jobs`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'heroku_exl_delayed_job_development.delayed_jobs' doesn't exist: SHOW FIELDS FROM `delayed_jobs`):
+  app/controllers/work_controller.rb:13:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Unknown table 'delayed_jobs': DROP TABLE `delayed_jobs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (1.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100721213920'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to DelayedJobMigration (20100721213920)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCREATE TABLE `delayed_jobs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `priority` int(11) DEFAULT 0, `attempts` int(11) DEFAULT 0, `handler` text, `last_error` text, `run_at` datetime, `locked_at` datetime, `failed_at` datetime, `locked_by` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100721213920')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `delayed_jobs`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `delayed_jobs`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `delayed_jobs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:50:16) [GET]
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `delayed_jobs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Create (0.3ms)[0m   [0mINSERT INTO `delayed_jobs` (`failed_at`, `locked_by`, `created_at`, `handler`, `updated_at`, `priority`, `run_at`, `attempts`, `locked_at`, `last_error`) VALUES(NULL, NULL, '2010-07-21 21:50:16', '--- !ruby/object:WorkController::WorkItem {}\n\n', '2010-07-21 21:50:16', 0, '2010-07-21 21:50:16', 0, NULL, NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Rendering work/index
+Completed in 93ms (View: 45, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:50:38) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Create (0.2ms)[0m   [0mINSERT INTO `delayed_jobs` (`failed_at`, `locked_by`, `created_at`, `handler`, `updated_at`, `priority`, `run_at`, `attempts`, `locked_at`, `last_error`) VALUES(NULL, NULL, '2010-07-21 21:50:38', '--- !ruby/object:WorkController::WorkItem {}\n\n', '2010-07-21 21:50:38', 0, '2010-07-21 21:50:38', 0, NULL, NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] Starting job worker
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `delayed_jobs`[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.5ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58', locked_by = 'host:wals-macbook-pro.local pid:616' WHERE (id = 1 and (locked_at is null or locked_at < '2010-07-21 17:50:58') and (run_at <= '2010-07-21 21:50:58')) [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] acquired lock on WorkController::WorkItem
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] WorkController::WorkItem failed with NameError: undefined local variable or method `boom' for #<WorkController::WorkItem:0x10355cd88> - 0 failed attempts
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:50:58', `last_error` = 'undefined local variable or method `boom\' for #<WorkController::WorkItem:0x10355cd88>\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:7:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:51:04', `attempts` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58', locked_by = 'host:wals-macbook-pro.local pid:616' WHERE (id = 2 and (locked_at is null or locked_at < '2010-07-21 17:50:58') and (run_at <= '2010-07-21 21:50:58')) [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] acquired lock on WorkController::WorkItem
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] WorkController::WorkItem failed with NameError: undefined local variable or method `boom' for #<WorkController::WorkItem:0x103514448> - 0 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:50:58', `last_error` = 'undefined local variable or method `boom\' for #<WorkController::WorkItem:0x103514448>\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:7:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:51:04', `attempts` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0;1mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] failed to acquire exclusive lock for WorkController::WorkItem
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] 2 jobs processed at 11.2663 j/s, 2 failed ...
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0;1mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:50:58' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:50:58+0100: [Worker(host:wals-macbook-pro.local pid:616)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.8ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:51:03' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:51:03+0100: [Worker(host:wals-macbook-pro.local pid:616)] acquired lock on WorkController::WorkItem
+2010-07-21T22:51:03+0100: [Worker(host:wals-macbook-pro.local pid:616)] WorkController::WorkItem failed with NameError: undefined local variable or method `boom' for #<WorkController::WorkItem:0x103493820> - 1 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:51:03', `locked_at` = NULL, `last_error` = 'undefined local variable or method `boom\' for #<WorkController::WorkItem:0x103493820>\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:7:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:51:24', `attempts` = 2, `locked_by` = NULL WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:51:03' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+2010-07-21T22:51:03+0100: [Worker(host:wals-macbook-pro.local pid:616)] acquired lock on WorkController::WorkItem
+2010-07-21T22:51:03+0100: [Worker(host:wals-macbook-pro.local pid:616)] WorkController::WorkItem failed with NameError: undefined local variable or method `boom' for #<WorkController::WorkItem:0x10344a710> - 1 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:51:03', `locked_at` = NULL, `last_error` = 'undefined local variable or method `boom\' for #<WorkController::WorkItem:0x10344a710>\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:7:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:51:24', `attempts` = 2, `locked_by` = NULL WHERE `id` = 2[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+2010-07-21T22:51:03+0100: [Worker(host:wals-macbook-pro.local pid:616)] 2 jobs processed at 105.1362 j/s, 2 failed ...
+2010-07-21T22:51:14+0100: [Worker(host:wals-macbook-pro.local pid:616)] Exiting...
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:wals-macbook-pro.local pid:616') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WorkController#index (for 127.0.0.1 at 2010-07-21 22:57:58) [GET]
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `delayed_jobs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Create (0.2ms)[0m   [0mINSERT INTO `delayed_jobs` (`failed_at`, `locked_by`, `created_at`, `handler`, `updated_at`, `priority`, `run_at`, `attempts`, `locked_at`, `last_error`) VALUES(NULL, NULL, '2010-07-21 21:57:58', '--- !ruby/object:WorkController::WorkItem {}\n\n', '2010-07-21 21:57:58', 0, '2010-07-21 21:57:58', 0, NULL, NULL)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Completed in 20ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] Starting job worker
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `delayed_jobs`[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.5ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09', locked_by = 'host:wals-macbook-pro.local pid:641' WHERE (id = 1 and (locked_at is null or locked_at < '2010-07-21 17:58:09') and (run_at <= '2010-07-21 21:58:09')) [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 2 failed attempts
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:09', `last_error` = 'uninitialized constant WorkController::WorkItem::Exceptional\n/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:105:in `const_missing\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:6:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:59:35', `attempts` = 3 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.5ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09', locked_by = 'host:wals-macbook-pro.local pid:641' WHERE (id = 2 and (locked_at is null or locked_at < '2010-07-21 17:58:09') and (run_at <= '2010-07-21 21:58:09')) [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 2 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:09', `last_error` = 'uninitialized constant WorkController::WorkItem::Exceptional\n/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:105:in `const_missing\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:6:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:59:35', `attempts` = 3 WHERE `id` = 2[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09', locked_by = 'host:wals-macbook-pro.local pid:641' WHERE (id = 3 and (locked_at is null or locked_at < '2010-07-21 17:58:09') and (run_at <= '2010-07-21 21:58:09')) [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 0 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:09', `last_error` = 'uninitialized constant WorkController::WorkItem::Exceptional\n/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:105:in `const_missing\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/app/controllers/work_controller.rb:6:in `perform\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/backend/base.rb:65:in `invoke_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/timeout.rb:62:in `timeout\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:122:in `run\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:121:in `run\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:187:in `reserve_and_run_one_job\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:106:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `times\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:105:in `work_off\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:80:in `start\'\n/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:79:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `loop\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/worker.rb:76:in `start\'\n/Users/wal/projects/wal/heroku-exceptional-delayed-job/vendor/plugins/delayed_job/lib/delayed/tasks.rb:13\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `call\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:636:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:631:in `execute\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:597:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/1.8/monitor.rb:242:in `synchronize\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:590:in `invoke_with_call_chain\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:583:in `invoke\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2051:in `invoke_task\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `each\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2029:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2023:in `top_level\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2001:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:2068:in `standard_exception_handling\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake.rb:1998:in `run\'\n/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/bin/rake:31\n/usr/local/bin/rake:19:in `load\'\n/usr/local/bin/rake:19', `run_at` = '2010-07-21 21:58:15', `attempts` = 1 WHERE `id` = 3[0m
+  [4;36;1mSQL (19.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (9.8ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 3 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Update (0.5ms)[0m   [0;1mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] 3 jobs processed at 13.4198 j/s, 3 failed ...
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0;1mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 3 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.4ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Update (1.0ms)[0m   [0;1mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:09' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:09+0100: [Worker(host:wals-macbook-pro.local pid:641)] failed to acquire exclusive lock for WorkController::WorkItem
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.5ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:14' WHERE (id = 3 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 1 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.2ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:14', `locked_at` = NULL, `run_at` = '2010-07-21 21:58:35', `attempts` = 2, `locked_by` = NULL WHERE `id` = 3[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:14' WHERE (id = 1 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 3 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.2ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:14', `locked_at` = NULL, `run_at` = '2010-07-21 22:02:35', `attempts` = 4, `locked_by` = NULL WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET locked_at = '2010-07-21 21:58:14' WHERE (id = 2 and locked_by = 'host:wals-macbook-pro.local pid:641') [0m
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] acquired lock on WorkController::WorkItem
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] WorkController::WorkItem failed with NameError: uninitialized constant WorkController::WorkItem::Exceptional - 3 failed attempts
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.2ms)[0m   [0mUPDATE `delayed_jobs` SET `updated_at` = '2010-07-21 21:58:14', `locked_at` = NULL, `run_at` = '2010-07-21 22:02:35', `attempts` = 4, `locked_by` = NULL WHERE `id` = 2[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+2010-07-21T22:58:14+0100: [Worker(host:wals-macbook-pro.local pid:641)] 3 jobs processed at 83.6585 j/s, 3 failed ...
+2010-07-21T22:58:22+0100: [Worker(host:wals-macbook-pro.local pid:641)] Exiting...
+2010-07-21T22:58:22+0100: [Worker(host:wals-macbook-pro.local pid:641)] Exiting...
+  [4;35;1mDelayed::Backend::ActiveRecord::Job Update (0.3ms)[0m   [0mUPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:wals-macbook-pro.local pid:641') [0m
